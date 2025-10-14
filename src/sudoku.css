@@ -1,0 +1,175 @@
+.app-shell {
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
+	align-items: center;
+	color: var(--color-text);
+}
+.app-header h1 {
+	margin: 0 0 0.25rem;
+	font-size: 2rem;
+	color: var(--color-brand);
+}
+.controls-row {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 0.5rem 0.75rem;
+	align-items: center;
+	justify-content: center;
+}
+.controls-row select,
+.controls-row button {
+	background: var(--color-surface-alt);
+	color: var(--color-text);
+	border: 1px solid var(--color-border);
+	border-radius: 6px;
+	padding: 0.4rem 0.7rem;
+}
+.controls-row label {
+	display: flex;
+	gap: 0.25rem;
+	align-items: center;
+	font-size: 0.85rem;
+}
+.controls-row button:hover,
+.controls-row select:hover {
+	border-color: var(--color-brand);
+}
+.timer {
+	font-variant-numeric: tabular-nums;
+}
+
+.sudoku-board {
+	border-collapse: collapse;
+	background: var(--color-surface);
+	box-shadow:
+		0 2px 4px rgba(0, 0, 0, 0.1),
+		0 4px 12px rgba(0, 0, 0, 0.08);
+	-webkit-user-select: none;
+	user-select: none;
+}
+.sudoku-cell {
+	width: 3rem;
+	height: 3rem;
+	position: relative;
+	padding: 0;
+	border: 1px solid var(--color-border);
+	text-align: center;
+}
+/* thicker box borders */
+.top-border {
+	border-top: 2px solid var(--color-border-strong);
+}
+.left-border {
+	border-left: 2px solid var(--color-border-strong);
+}
+.bottom-border {
+	border-bottom: 2px solid var(--color-border-strong);
+}
+.right-border {
+	border-right: 2px solid var(--color-border-strong);
+}
+
+.cell-btn {
+	position: absolute;
+	inset: 0;
+	width: 100%;
+	height: 100%;
+	background: transparent;
+	border: none;
+	font-size: 1.25rem;
+	font-weight: 500;
+	cursor: pointer;
+	color: var(--color-text);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.cell-btn[disabled] {
+	cursor: default;
+	font-weight: 700;
+	color: var(--color-text-secondary);
+}
+.cell-btn:hover:not([disabled]) {
+	background: var(--color-bg-inset);
+}
+.cell-btn[data-selected] {
+	outline: 2px solid var(--color-brand);
+	outline-offset: -2px;
+	background: var(--color-bg-muted);
+}
+.cell-btn[data-conflict] {
+	background: color-mix(in srgb, var(--color-error) 25%, transparent);
+	color: var(--color-error);
+}
+
+.sudoku-input-bar {
+	margin-top: 1rem;
+	display: flex;
+	gap: 0.5rem;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+.num-btn {
+	min-width: 2.25rem;
+	background: var(--color-surface-alt);
+	border: 1px solid var(--color-border);
+	color: var(--color-text);
+	border-radius: 4px;
+	padding: 0.4rem 0.6rem;
+	cursor: pointer;
+	transition:
+		background 0.15s,
+		border-color 0.15s;
+}
+.num-btn:hover {
+	border-color: var(--color-brand);
+	background: var(--color-bg-inset);
+}
+.num-btn.clear {
+	color: var(--color-error);
+}
+.num-btn.clear:hover {
+	border-color: var(--color-error);
+}
+
+.game-complete {
+	margin-top: 1rem;
+	font-weight: 600;
+	color: var(--color-success);
+	font-size: 1.1rem;
+	background: color-mix(in srgb, var(--color-success) 12%, transparent);
+	padding: 0.6rem 1rem;
+	border-radius: 6px;
+	border: 1px solid var(--color-success);
+}
+
+.game-timer {
+	display: flex;
+	align-items: center;
+	gap: 0.4rem;
+	font-variant-numeric: tabular-nums;
+	background: var(--color-surface-alt);
+	padding: 0.35rem 0.6rem;
+	border: 1px solid var(--color-border);
+	border-radius: 6px;
+}
+.game-timer .best {
+	color: var(--color-text-secondary);
+	font-size: 0.75rem;
+}
+.game-timer .badge.new-best {
+	background: var(--color-success);
+	color: var(--color-text-inverse);
+	font-size: 0.6rem;
+	padding: 0.15rem 0.35rem;
+	border-radius: 999px;
+	text-transform: uppercase;
+	letter-spacing: 0.5px;
+}
+
+.app-footer {
+	margin-top: 2rem;
+	font-size: 0.75rem;
+	color: var(--color-text-secondary);
+}

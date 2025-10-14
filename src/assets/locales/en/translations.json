@@ -1,0 +1,19 @@
+{
+	"TITLE": "Sudoku",
+	"DIFFICULTY": "DIFFICULTY",
+	"NEWGAME": "New Game",
+	"RESET": "RESET",
+	"HINT": "HINT",
+	"TIME": "TIME",
+	"COMPLETE_IN": "Completed in",
+	"builtWith": "Built with BiP-inspired palette.",
+	"DIFFICULTY_EASY": "Easy",
+	"DIFFICULTY_MEDIUM": "Medium",
+	"DIFFICULTY_HARD": "Hard",
+	"DIFFICULTY_EXPERT": "Expert",
+	"CLEAR": "CLEAR",
+	"LANGUAGE": "LANGUAGE",
+	"BEST_TIME": "Best",
+	"NEW_BEST": "New!",
+	"BEST_TIME_TOOLTIP": "Best time for this difficulty"
+}

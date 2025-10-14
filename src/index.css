@@ -1,0 +1,65 @@
+@import "./theme.css";
+
+:root {
+	font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+	line-height: 1.5;
+	font-weight: 400;
+	color-scheme: light dark;
+	color: var(--color-text);
+	background-color: var(--color-bg);
+	font-synthesis: none;
+	text-rendering: optimizeLegibility;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+a {
+	font-weight: 500;
+	color: var(--color-brand);
+	text-decoration: inherit;
+	transition: color 0.2s;
+}
+a:hover {
+	color: var(--color-brand-hover);
+}
+
+body {
+	margin: 0;
+	display: flex;
+	place-items: center;
+	min-width: 320px;
+	min-height: 100vh;
+}
+
+h1 {
+	font-size: 3.2em;
+	line-height: 1.1;
+}
+
+button {
+	border-radius: 8px;
+	border: 1px solid var(--color-border);
+	padding: 0.6em 1.2em;
+	font-size: 1em;
+	font-weight: 500;
+	font-family: inherit;
+	background-color: var(--color-surface-alt);
+	color: var(--color-text);
+	cursor: pointer;
+	transition:
+		background-color 0.2s,
+		border-color 0.2s,
+		color 0.2s;
+}
+button:hover {
+	border-color: var(--color-brand);
+	background-color: var(--color-bg-inset);
+}
+button:focus,
+button:focus-visible {
+	outline: none;
+	box-shadow: var(--shadow-focus);
+	border-color: var(--color-brand);
+}
+
+/* Light/dark adjustments now handled inside theme.css */

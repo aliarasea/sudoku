@@ -1,0 +1,18 @@
+{
+	"TITLE": "Sudoku",
+	"DIFFICULTY": "Zorluk",
+	"NEWGAME": "Yeni Oyun",
+	"RESET": "Sıfırla",
+	"HINT": "İpucu",
+	"TIME": "Süre",
+	"COMPLETE_IN": "Tamamlandı",
+	"DIFFICULTY_EASY": "Kolay",
+	"DIFFICULTY_MEDIUM": "Orta",
+	"DIFFICULTY_HARD": "Zor",
+	"DIFFICULTY_EXPERT": "Usta",
+	"CLEAR": "Sil",
+	"LANGUAGE": "Dil",
+	"BEST_TIME": "En İyi",
+	"NEW_BEST": "Rekor!",
+	"BEST_TIME_TOOLTIP": "Bu zorluk için en iyi süre"
+}
