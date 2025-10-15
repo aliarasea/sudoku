@@ -10,6 +10,19 @@
 	font-size: 2rem;
 	color: var(--color-brand);
 }
+
+.app-header table {
+	font-size: 0.85rem;
+	display: flex;
+	justify-content: center;
+
+	td img {
+		display: flex;
+		width: 32px;
+		height: 32px;
+	}
+}
+
 .controls-row {
 	display: flex;
 	flex-wrap: wrap;

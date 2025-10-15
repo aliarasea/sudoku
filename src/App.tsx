@@ -39,7 +39,18 @@ function App() {
 	return (
 		<div className="app-shell">
 			<header className="app-header">
-				<h1>{t("TITLE")}</h1>
+				<table>
+					<tbody>
+						<tr>
+							<td>
+								<img src="public/bip.png" alt="Sudoku Icon" />
+							</td>
+							<td>
+								<h1>{t("TITLE")}</h1>
+							</td>
+						</tr>
+					</tbody>
+				</table>
 				<br />
 				<div className="controls-row">
 					<label>
