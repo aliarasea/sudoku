@@ -43,7 +43,7 @@ function App() {
 					<tbody>
 						<tr>
 							<td>
-								<img src="public/bip.png" alt="Sudoku Icon" />
+								<img src="/public/bip.png" alt="Sudoku Icon" />
 							</td>
 							<td>
 								<h1>{t("TITLE")}</h1>
